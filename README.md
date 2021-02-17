@@ -75,5 +75,6 @@ Here we create store the entire dictionary, but for display purposes only print 
 ## the special way that i I prefer
 using this [Python Script](https://github.com/O-zbair/Internet-Speed-Checker/blob/main/Checker.py "Python Script")
 And we get the following as the output:
+
 <a href="https://imgbb.com/"><img src="https://i.ibb.co/ZxrLPpq/Capture2.png" alt="Capture2" border="0"></a>
 
