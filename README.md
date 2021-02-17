@@ -1,6 +1,7 @@
 # Internet Speed Checker
 
 <a href="https://ibb.co/yFRvfZH"><img src="https://i.ibb.co/pjPV0MY/Internet-Speed-Checker.png" alt="Internet-Speed-Checker" border="0"></a>
+
 ### Prerequisites: 
 - [ Python Programming Language](https://www.python.org/ " Python Programming Language")
 ## Section 1: Installation
@@ -57,6 +58,7 @@ This method is similar to the previous one, but tests the upload speed of your c
 This method allows us to identify the best server that we will be testing the connection from. In general, this tends to find the best testing server that is within your region (city).
 
 In terms of formatting, it will return a dictionary with the details of that server. Let’s take a look:
+
 <a href="https://ibb.co/HhzQZLm"><img src="https://i.ibb.co/PDh8ksB/R52449543340d69ecffb69923076ab146.png" alt="R52449543340d69ecffb69923076ab146" border="0"></a>
 In my case, since I live in Morocco
 
@@ -75,5 +77,6 @@ Here we create store the entire dictionary, but for display purposes only print 
 ## the special way that i I prefer
 using this python script 
 And we get the following as the output:
+
 <a href="https://imgbb.com/"><img src="https://i.ibb.co/ZxrLPpq/Capture2.png" alt="Capture2" border="0"></a>
 
