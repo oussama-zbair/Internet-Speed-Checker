@@ -6,8 +6,8 @@
 ## Section 1: Installation
 
 ### Installing the required library:
+<img src="https://i.ibb.co/9GT0768/carbon.png" alt="carbon" border="0">
 You will need to install an additional library speedtest-cli.
-<a href="https://ibb.co/9GT0768"><img src="https://i.ibb.co/9GT0768/carbon.png" alt="carbon" border="0"></a>
 Now that it’s installed, let’s go ahead and import it:
 
 ```python
