@@ -57,7 +57,9 @@ This method is similar to the previous one, but tests the upload speed of your c
 This method allows us to identify the best server that we will be testing the connection from. In general, this tends to find the best testing server that is within your region (city).
 
 In terms of formatting, it will return a dictionary with the details of that server. Let’s take a look:
-<a href="https://ibb.co/HhzQZLm"><img src="https://i.ibb.co/PDh8ksB/R52449543340d69ecffb69923076ab146.png" alt="R52449543340d69ecffb69923076ab146" border="0"></a>
+<img src="https://i.ibb.co/PDh8ksB/R52449543340d69ecffb69923076ab146.png" alt="R52449543340d69ecffb69923076ab146" border="0">
+<br>
+
 In my case, since I live in Morocco
 
 **.get_closest_servers()**
