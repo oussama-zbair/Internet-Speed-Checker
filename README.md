@@ -1,6 +1,5 @@
 # Internet Speed Checker
 
-<a href="https://ibb.co/yFRvfZH"><img src="https://i.ibb.co/pjPV0MY/Internet-Speed-Checker.png" alt="Internet-Speed-Checker" border="0"></a>
 ### Prerequisites: 
 - [ Python Programming Language](https://www.python.org/ " Python Programming Language")
 ## Section 1: Installation
