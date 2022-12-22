@@ -1,34 +1,34 @@
-import psutil , speedtest
+import psutil
+import speedtest
 from tabulate import tabulate
 
-class Net(object):
+class Net:
     def __init__(self):
-        self.parser = psutil.net_if_addrs()
+        self.interfaces = self.get_interfaces()
         self.speed_parser = speedtest.Speedtest()
-        self.interfaces = self.interface()[0]
-    def interface(self):
+    
+    def get_interfaces(self):
+        parser = psutil.net_if_addrs()
         interfaces = []
-        for interface_name, _ in self.parser.items():
-            interfaces.append(str(interface_name))
+        for interface_name, _ in parser.items():
+            interfaces.append(interface_name)
         return interfaces
         
+    def get_download_speed(self):
+        return round(self.speed_parser.download() / 1_000_000, 2)
+    
+    def get_upload_speed(self):
+        return round(self.speed_parser.upload() / 1_000_000, 2)
+    
     def __repr__(self):
-        
-        down = str(f'{round(self.speed_parser.download() / 1_000_000,2)} Mbps')
-        
-        up = str(f'{round(self.speed_parser.upload() / 1_000_000,2)} Mbps')
-        
-        interface = self.interfaces
-        
         data = {
-            "Interfaces": [interface],
-            "Download": [down],
-            "Upload": [up]
+            "Interfaces": self.interfaces,
+            "Download": self.get_download_speed(),
+            "Upload": self.get_upload_speed()
         }
-        table = tabulate(data,headers="keys",tablefmt="pretty")
+        table = tabulate(data, headers="keys", tablefmt="pretty")
         return table
-        
+
 if __name__ == "__main__":
-    print(Net())
-        
-        
+    net = Net()
+    print(net)
